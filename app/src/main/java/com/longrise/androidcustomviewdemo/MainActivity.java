@@ -7,6 +7,7 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.longrise.androidcustomviewdemo.flow.FlowActivity;
 import com.longrise.androidcustomviewdemo.inputnumber.InputNumberActivity;
 import com.longrise.androidcustomviewdemo.loginpage.LoginActivity;
 
@@ -24,16 +25,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void initView() {
         mbtnCounter = findViewById(R.id.btn_counter);
         mbtnLogin = findViewById(R.id.btn_login);
+
         mbtnCounter.setOnClickListener(this);
         mbtnLogin.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
-        if (v == mbtnCounter) {
-            startActivity(new Intent(this, InputNumberActivity.class));
-        } else if (v == mbtnLogin) {
-            startActivity(new Intent(this, LoginActivity.class));
+        switch (v.getId()) {
+            case R.id.btn_counter:
+                startActivity(new Intent(this, InputNumberActivity.class));
+                break;
+            case R.id.btn_login:
+                startActivity(new Intent(this, LoginActivity.class));
+                break;
         }
     }
 }

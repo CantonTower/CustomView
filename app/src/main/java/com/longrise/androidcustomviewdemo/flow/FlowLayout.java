@@ -34,6 +34,7 @@ public class FlowLayout extends ViewGroup {
     private int mTextColor;
     private int mBorderColor;
     private int mBorderRadius;
+    private OnItemClickListaner mListener;
 
     private List<String> mData = new ArrayList<>();
     private List<List<View>> mLines = new ArrayList<>();
@@ -180,6 +181,27 @@ public class FlowLayout extends ViewGroup {
             TextView textView = (TextView) LayoutInflater.from(getContext()).inflate(R.layout.item_flow_text, this, false);
             textView.setText(textStr);
             addView(textView);
+            final String text =textStr;
+            textView.setOnClickListener(new OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    callListener(v, text);
+                }
+            });
         }
+    }
+
+    public void setOnItemClickListener(OnItemClickListaner listener) {
+        mListener = listener;
+    }
+
+    public void callListener(View view, String text) {
+        if (mListener != null) {
+            mListener.onItemClick(view, text);
+        }
+    }
+
+    public interface OnItemClickListaner {
+        void onItemClick(View view, String text);
     }
 }
