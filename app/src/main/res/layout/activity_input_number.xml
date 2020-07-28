@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<!--    android:background="#a863ca">-->
+
+<!--    <com.longrise.androidcustomviewdemo.inputnumber.InputNumberView-->
+<!--        android:id="@+id/view_input_number"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:max="30"-->
+<!--        app:min="-30"-->
+<!--        />-->
+
+    <com.longrise.androidcustomviewdemo.flow.FlowLayout
+        android:id="@+id/layout_flow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:itemHorizontalMargin="10dp"
+        app:itemVerticalMargin="10dp"
+        />
+
+</LinearLayout>

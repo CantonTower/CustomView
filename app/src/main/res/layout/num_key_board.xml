@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_number_1"
+            android:text="1"
+            style="@style/NumberKeyBoardTextView"
+            />
+
+        <TextView
+            android:id="@+id/tv_number_2"
+            android:text="2"
+            style="@style/NumberKeyBoardTextView"
+            />
+
+        <TextView
+            android:id="@+id/tv_number_3"
+            android:text="3"
+            style="@style/NumberKeyBoardTextView"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_number_4"
+            android:text="4"
+            style="@style/NumberKeyBoardTextView"
+            />
+
+        <TextView
+            android:id="@+id/tv_number_5"
+            android:text="5"
+            style="@style/NumberKeyBoardTextView"
+            />
+
+        <TextView
+            android:id="@+id/tv_number_6"
+            android:text="6"
+            style="@style/NumberKeyBoardTextView"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_number_7"
+            android:text="7"
+            style="@style/NumberKeyBoardTextView"
+            />
+
+        <TextView
+            android:id="@+id/tv_number_8"
+            android:text="8"
+            style="@style/NumberKeyBoardTextView"
+            />
+
+        <TextView
+            android:id="@+id/tv_number_9"
+            android:text="9"
+            style="@style/NumberKeyBoardTextView"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_number_0"
+            android:text="0"
+            style="@style/NumberKeyBoardTextView"
+            />
+
+        <ImageView
+            android:id="@+id/tv_back"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_margin="5dp"
+            android:src="@mipmap/login_page_delete"
+            android:background="@drawable/selector_num_key_board"
+            android:padding="18dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

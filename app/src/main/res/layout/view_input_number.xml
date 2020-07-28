@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal"
+    >
+
+    <TextView
+        android:id="@+id/tv_plus"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:text="+"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:background="@drawable/selector_input_num_left_bg"
+        />
+
+    <EditText
+        android:id="@+id/et_value"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:text="0"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:background="@drawable/shape_input_num_edit_bg"
+        android:focusable="false"
+        />
+
+    <TextView
+        android:id="@+id/tv_minus"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:text="-"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:background="@drawable/shape_input_num_right_bg"
+        />
+
+</LinearLayout>
