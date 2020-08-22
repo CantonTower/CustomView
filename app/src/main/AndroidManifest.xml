@@ -28,6 +28,7 @@
             android:name=".loginpage.LoginActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity android:name=".flow.FlowActivity"/>
+        <activity android:name=".slide.SlideMenuActivity"/>
 
     </application>
 

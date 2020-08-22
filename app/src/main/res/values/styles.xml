@@ -19,6 +19,5 @@
         <item name="android:layout_margin">5dp</item>
         <item name="android:background">@drawable/selector_num_key_board</item>
     </style>
-    
 
 </resources>

@@ -26,5 +26,13 @@
         <attr name="borderColor" format="color"/>
         <attr name="borderRadius" format="dimension"/>
     </declare-styleable>
+
+    <declare-styleable name="SlideMenuView">
+        <attr name="function" format="enum">
+            <enum name="delete" value="0"/>
+            <enum name="read" value="1"/>
+            <enum name="top" value="2"/>
+        </attr>
+    </declare-styleable>
     
 </resources>
