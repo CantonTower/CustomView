@@ -29,6 +29,7 @@
             android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity android:name=".flow.FlowActivity"/>
         <activity android:name=".slide.SlideMenuActivity"/>
+        <activity android:name=".watchface.WatchFaceActivity"/>
 
     </application>
 

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:SOB="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.longrise.androidcustomviewdemo.watchface.WatchFaceView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        SOB:watchFaceBg="@mipmap/icon_watch_face_bg"
+        />
+
+</LinearLayout>

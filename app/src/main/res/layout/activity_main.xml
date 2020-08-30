@@ -27,4 +27,11 @@
         android:text="滑动菜单"
         />
 
+    <Button
+        android:id="@+id/btn_watch_face"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="表"
+        />
+
 </LinearLayout>
